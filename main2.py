@@ -1,4 +1,4 @@
-def Hello_word(print):
-    print("Hello, Word!")
+def Hello_world(print):
+    print("Hello, World!")
 
-Hello_word(print)
+Hello_world(print)
