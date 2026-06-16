@@ -1,16 +1,15 @@
-print("Convertidor de binario a decimal")
-prefijo = [128,64,32,16,8,4,2,1]
-binario = input('Ingrese un número binario:')
+print("______Convertidor a sistemas Númericos.______")
+prefijo_bin = [128,64,32,16,8,4,2,1]
+binario = input('Ingrese un número binario: ')
 while len(binario) != 8 and ('0' or '1') not in binario:
-    print("Debe tener 8 prefijos (solo transforma a numeros decimales del 0 al 255)")
+    print("Debe tener 8 caracteres(números decimales del 0 al 255), y los números mayores a 1 se consideran 0")
     binario = input('Ingrese un número binario:')
-número = 0
-for dato, valor in zip(binario, prefijo):
-    if dato == '1':
-        número += valor
-    elif dato == '0':
-        número += 0
-print(número)
-            
+número10 = 0
+for bit, valor in zip(binario, prefijo_bin):
+    if bit == '1':
+        número10 += valor
+    elif bit == '0':
+        número10 += 0
+print(f"Tú número binario {binario}, pasado a decimal es {número10}.")
 
                 
